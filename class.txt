@@ -1,3 +1,4 @@
-can
-scrap
-bottle
+suv
+sedan
+hatch-back
+van
