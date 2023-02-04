@@ -16,3 +16,7 @@
 
   ### 클래스 수정
     app.py 112라인
+   
+  ### 스크린샷
+    ![screenshot](https://user-images.githubusercontent.com/106146166/216765366-e573d2e4-fbad-483c-8f41-90ee559ca654.JPG)
+
