@@ -12,7 +12,7 @@ import json
 import psutil
 import subprocess
 import pandas as pd
-
+import random
 import base64
 
 # 사이드바, 기본 배경
@@ -90,8 +90,11 @@ def get_gpu_memory():
     gpu_memory = [int(x) for x in result.strip().split('\n')]
     return gpu_memory[0]
 
+def random_color():
+    return (random.randint(0, 255), random.randint(0, 255), random.randint(0, 255))
+
 def color_picker_fn(classname, key):
-    color_picke = st.sidebar.color_picker(f'{classname}:', '#ff0003', key=key)
+    color_picke = st.sidebar.color_picker(f'{classname}:', '#00FFAA', key=key)
     color_rgb_list = list(ImageColor.getcolor(str(color_picke), "RGB"))
     color = [color_rgb_list[2], color_rgb_list[1], color_rgb_list[0]]
     return color
